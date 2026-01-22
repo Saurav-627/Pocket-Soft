@@ -1,37 +1,42 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PocketSoft | Brutalist Tech Excellence</title>
-    
-    <!-- Tailwind CSS with Plugins -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    
-    <!-- Tailwind Configuration -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "primary": "#32CD32",
-              "soft-gray": "#F2F2F2",
-              "pure-white": "#FFFFFF",
-              "black": "#262626", // OVERRIDE: Custom Gray instead of Pure Black
-            }
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PocketSoft | Brutalist Tech Excellence</title>
+
+  <!-- Tailwind CSS with Plugins -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#30d527",
+            "soft-gray": "#F2F2F2",
+            "pure-white": "#FFFFFF",
+            "industrial-gray": "#E5E5E5", // Light Gray for previously black backgrounds
           }
         }
       }
-    </script>
-    
-    <!-- Custom Brutalist Styles -->
-    <style type="text/tailwindcss">
-        @layer base {
+    }
+  </script>
+
+  <!-- Custom Brutalist Styles -->
+  <style type="text/tailwindcss">
+    @layer base {
             body {
                 font-family: 'Space Grotesk', sans-serif;
                 @apply bg-white text-black;
@@ -43,22 +48,22 @@
         }
         /* Custom Utilities using theme colors */
         .brutalist-border {
-            border: 4px solid theme('colors.black');
+            border: 4px solid black;
         }
         .brutalist-border-lime {
-            border: 4px solid #32CD32;
+            border: 4px solid #30d527;
         }
         .brutalist-shadow {
-            box-shadow: 8px 8px 0px 0px theme('colors.black');
+            box-shadow: 8px 8px 0px 0px #E5E5E5;
         }
         .brutalist-shadow-lime {
-            box-shadow: 8px 8px 0px 0px #32CD32;
+            box-shadow: 8px 8px 0px 0px #30d527;
         }
         .brutalist-shadow-sm {
-            box-shadow: 4px 4px 0px 0px theme('colors.black');
+            box-shadow: 4px 4px 0px 0px #E5E5E5;
         }
         .tag-oversized {
-            @apply inline-block bg-[#32CD32] text-black font-bold px-4 py-2 brutalist-border uppercase text-sm tracking-widest;
+            @apply inline-block bg-[#30d527] text-black font-bold px-4 py-2 brutalist-border uppercase text-sm tracking-widest;
         }
         .grid-pattern {
             background-size: 40px 40px;
@@ -73,9 +78,11 @@
             scrollbar-width: none;
         }
     </style>
-  </head>
-  <body class="selection:bg-primary selection:text-black">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+</head>
+
+<body class="selection:bg-primary selection:text-black">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
