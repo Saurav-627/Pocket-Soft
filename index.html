@@ -28,6 +28,7 @@
             "soft-gray": "#F2F2F2",
             "pure-white": "#FFFFFF",
             "industrial-gray": "#E5E5E5", // Light Gray for previously black backgrounds
+            "deep-gray": "#666666", // Darker gray for lines and shadows
           }
         }
       }
@@ -48,19 +49,19 @@
         }
         /* Custom Utilities using theme colors */
         .brutalist-border {
-            border: 4px solid black;
+            @apply border-[4px] border-deep-gray;
         }
         .brutalist-border-lime {
             border: 4px solid #30d527;
         }
         .brutalist-shadow {
-            box-shadow: 8px 8px 0px 0px #E5E5E5;
+            box-shadow: 8px 8px 0px 0px #666666;
         }
         .brutalist-shadow-lime {
             box-shadow: 8px 8px 0px 0px #30d527;
         }
         .brutalist-shadow-sm {
-            box-shadow: 4px 4px 0px 0px #E5E5E5;
+            box-shadow: 4px 4px 0px 0px #666666;
         }
         .tag-oversized {
             @apply inline-block bg-[#30d527] text-black font-bold px-4 py-2 brutalist-border uppercase text-sm tracking-widest;

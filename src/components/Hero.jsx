@@ -61,22 +61,22 @@ const Hero = () => {
                     <p className="text-2xl font-medium max-w-2xl leading-tight border-l-8 border-primary pl-6">
                         POCKETSOFT engineers high-performance software. We don't just build apps; we architect the digital future with brutal precision.
                     </p>
-                    <div className="flex flex-wrap gap-6">
-                        <a href="#" className="bg-black text-white px-10 py-5 brutalist-border-lime brutalist-shadow-lime text-xl font-bold uppercase hover:scale-[1.02] transition-transform">
+                    <div className="flex flex-wrap gap-6 text-black">
+                        <a href="#" className="bg-black text-white px-10 py-5 border-[4px] border-primary brutalist-shadow-lime text-xl font-bold uppercase hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
                             Initiate Project
                         </a>
-                        <a href="#work" className="bg-white text-black px-10 py-5 brutalist-border brutalist-shadow text-xl font-bold uppercase hover:scale-[1.02] transition-transform">
+                        <a href="#work" className="bg-white text-black px-10 py-5 brutalist-border brutalist-shadow text-xl font-bold uppercase hover:translate-x-1 hover:translate-y-1 hover:shadow-none hover:bg-industrial-gray transition-all">
                             View Projects
                         </a>
                     </div>
                 </div>
                 <div className="lg:col-span-5 relative animate-on-scroll">
-                    <div className="absolute -inset-4 bg-primary brutalist-border -z-10 translate-x-4 translate-y-4"></div>
+                    <div className="absolute -inset-0 bg-primary -z-10 translate-x-4 translate-y-4"></div>
                     <div className="brutalist-border overflow-hidden bg-industrial-gray">
                         <div className="w-full aspect-[4/3] bg-center bg-cover"
                             style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4qKk-68XJA2liySrJ04WXxjvXiWIWbjQVpHk-zZK4z1g4298BIRms0gZYGIENA3BWrsmf9qLakFFDEmjYngnmN6HLj6bxx1xXhAnesHfS4B1COdptq-WbTIOojzLrJtT467-Gt5uRU5vk2oH4-noqf1NI0Isd1WUZPp_W3c0Nf3mleGY8XIYs7Hgcf9fdgSryV_yoiXpZj7wBhJCqDt7mX3oedPmgeEc8USl4XbPLgQawD0g43JOMNZAYk0uEepQnFwGfMc3jjo1w')" }}></div>
                     </div>
-                    <div className="absolute -bottom-8 -left-8 bg-white brutalist-border p-8 brutalist-shadow">
+                    <div className="absolute -bottom-8 -left-8 bg-white border-4 border-primary p-8 brutalist-shadow">
                         <p className="text-5xl font-black text-black"><span ref={countRef}>0</span>+</p>
                         <p className="text-xs font-bold uppercase tracking-widest mt-2">Successful Deployments</p>
                     </div>

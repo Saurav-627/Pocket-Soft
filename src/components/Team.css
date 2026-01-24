@@ -1,0 +1,74 @@
+.team-swiper {
+    position: relative;
+    padding: 20px 10px;
+}
+
+/* Scale effect for non-active slides on desktop */
+@media screen and (min-width: 992px) {
+    .team-swiper .swiper-slide {
+        scale: 1;
+        transition: 300ms scale ease-in-out;
+        overflow: visible;
+        opacity: 1 !important;
+    }
+
+    .team-swiper .swiper-slide:not(.swiper-slide-active) {
+        scale: 0.9;
+        opacity: 1 !important;
+    }
+}
+
+.team-pagination {
+    gap: 10px;
+    width: auto !important;
+}
+
+/* Pagination bullets styling */
+.team-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #666666;
+    opacity: 0.3;
+    border: 2px solid #666666;
+    transition: all 0.3s;
+    margin: 0 !important;
+}
+
+.team-pagination .swiper-pagination-bullet-active {
+    background: #30d527;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.custom-navigation button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-navigation button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.team-card {
+    width: 100%;
+    /* max-width: 360px; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 16px auto;
+}
+
+/* @media screen and (max-width: 991px) {
+    .team-card {
+        max-width: 400px;
+    }
+} */
+
+/* @media screen and (min-width: 992px) {
+    .team-card {
+        width: 360px;
+    }
+} */

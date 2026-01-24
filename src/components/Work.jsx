@@ -23,7 +23,7 @@ const Work = () => {
                                 <div className="bg-industrial-gray border-2 border-black text-black px-3 py-1 text-xs font-bold uppercase">AI ENGINE</div>
                             </div>
                             <p className="text-xl font-medium mb-8">AI-driven astrological computation engine. Combining legacy wisdom with modern predictive modeling.</p>
-                            <button className="w-full py-4 brutalist-border bg-primary font-black uppercase tracking-widest hover:bg-black hover:text-white transition-colors">
+                            <button className="w-full py-4 brutalist-border brutalist-shadow-sm bg-primary font-black uppercase tracking-widest hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
                                 Launch Case Study
                             </button>
                         </div>
@@ -33,11 +33,11 @@ const Work = () => {
                             style={{ backgroundImage: "url('/trikoned.png')" }}></div>
                         <div className="p-10">
                             <div className="flex justify-between items-start mb-6">
-                                <h3 className="text-4xl font-black normal-case">TrikonED</h3>
+                                <h3 className="text-4xl font-black normal-case">trikonED</h3>
                                 <div className="bg-industrial-gray border-2 border-black text-black px-3 py-1 text-xs font-bold uppercase">ED TECH</div>
                             </div>
-                            <p className="text-xl font-medium mb-8">Decentralized education network connecting institutional hubs across four continents.</p>
-                            <button className="w-full py-4 brutalist-border bg-primary font-black uppercase tracking-widest hover:bg-black hover:text-white transition-colors">
+                            <p className="text-xl font-medium mb-8">Decentralized education network connecting institutional hubs across world.</p>
+                            <button className="w-full py-4 brutalist-border brutalist-shadow-sm bg-primary font-black uppercase tracking-widest hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
                                 Launch Case Study
                             </button>
                         </div>
