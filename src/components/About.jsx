@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className="bg-soft-gray py-20 px-6 md:px-12 border-b-4 border-black" id="about">
+        <section className="bg-soft-gray py-8 px-6 md:px-12 border-b-4 border-black" id="about">
             <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
                 <div className="relative animate-on-scroll">
                     <div className="grid grid-cols-2 gap-6">

@@ -202,7 +202,7 @@ const Team = () => {
 
                                 {/* Content */}
                                 <div className="p-4">
-                                    <h4 className="text-lg font-black mb-1.5 uppercase tracking-tight">{member.name}</h4>
+                                    <h4 className="text-xl font-black mb-1.5 uppercase tracking-tight">{member.name}</h4>
 
                                     {/* Role Badge */}
                                     <div className="mb-3">

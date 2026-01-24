@@ -2,7 +2,7 @@ import React from 'react';
 
 const Services = () => {
     return (
-        <section className="py-20 px-6 md:px-12 bg-white" id="services">
+        <section className="py-8 px-6 md:px-12 bg-white" id="services">
             <div className="max-w-[1400px] mx-auto">
                 <div className="mb-12 animate-on-scroll">
                     <span className="tag-oversized mb-6">Capabilities List</span>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Work = () => {
     return (
-        <section className="py-20 px-6 md:px-12 bg-industrial-gray text-black" id="work">
+        <section className="py-8 px-6 md:px-12 bg-industrial-gray text-black" id="work">
             <div className="max-w-[1400px] mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-12 animate-on-scroll">
                     <div className="max-w-3xl">
@@ -19,13 +19,13 @@ const Work = () => {
                             style={{ backgroundImage: "url('/pocketpandit.png')" }}></div>
                         <div className="p-10">
                             <div className="flex justify-between items-start mb-6">
-                                <h3 className="text-4xl font-black normal-case">PocketPandit</h3>
+                                <h3 className="text-4xl font-black normal-case">PocketPandit AI</h3>
                                 <div className="bg-industrial-gray border-2 border-black text-black px-3 py-1 text-xs font-bold uppercase">AI ENGINE</div>
                             </div>
                             <p className="text-xl font-medium mb-8">AI-driven astrological computation engine. Combining legacy wisdom with modern predictive modeling.</p>
-                            <button className="w-full py-4 brutalist-border brutalist-shadow-sm bg-primary font-black uppercase tracking-widest hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+                            <a href="https://pocketpandit.ai" target="_blank" className="w-full block text-center py-4 brutalist-border brutalist-shadow-sm bg-primary font-black uppercase tracking-widest hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
                                 Launch Case Study
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div className="group brutalist-border-lime bg-white text-black">
@@ -37,9 +37,9 @@ const Work = () => {
                                 <div className="bg-industrial-gray border-2 border-black text-black px-3 py-1 text-xs font-bold uppercase">ED TECH</div>
                             </div>
                             <p className="text-xl font-medium mb-8">Decentralized education network connecting institutional hubs across world.</p>
-                            <button className="w-full py-4 brutalist-border brutalist-shadow-sm bg-primary font-black uppercase tracking-widest hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+                            <a href="https://trikoned.com" target="_blank" className="w-full block text-center py-4 brutalist-border brutalist-shadow-sm bg-primary font-black uppercase tracking-widest hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
                                 Launch Case Study
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

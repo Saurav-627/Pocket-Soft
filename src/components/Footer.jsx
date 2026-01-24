@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="bg-industrial-gray text-black border-t-4 border-primary py-12 px-6 md:px-12 animate-on-scroll">
+        <footer className="bg-industrial-gray text-black border-t-4 border-primary py-8 px-6 md:px-12 animate-on-scroll">
             <div className="max-w-[1400px] mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-1 md:col-span-1">
