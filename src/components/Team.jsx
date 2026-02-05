@@ -77,61 +77,56 @@ const Team = () => {
         {
             name: "Lekhnath Rijal",
             role: "Lead Engineer",
-            img: "/default-avatar.png",
+            img: "/teams/Lekhnath.jpeg",
             description: "Lead Engineer passionate about architecting scalable solutions with precision and innovation, leading the team with technical excellence and strategic vision.",
             social: {
-                github: "https://github.com",
-                linkedin: "https://linkedin.com",
-                twitter: "https://twitter.com",
-                email: "mailto:lekhnath@pocketsoft.com"
+                github: "https://github.com/lekhnath",
+                linkedin: "https://www.linkedin.com/in/lekhnath/",
+                email: "mailto:lekhnath@pocketsoft.net"
             }
         },
         {
             name: "Sijal Shrestha",
             role: "QA Engineer",
-            img: "/default-avatar.png",
+            img: "/teams/Sijal.jpeg",
             description: "QA Engineer focused on ensuring software quality through rigorous testing and reliable automation frameworks.",
             social: {
-                github: "https://github.com",
-                linkedin: "https://linkedin.com",
-                twitter: "https://twitter.com",
-                email: "mailto:sijal@pocketsoft.com"
+                github: "https://github.com/ShresthaSijal",
+                linkedin: "https://www.linkedin.com/in/sijal-shrestha-06b237266/",
+                email: "mailto:sijal@pocketsoft.net"
             }
         },
         {
             name: "Rabin Phaiju",
             role: "Fullstack Developer",
-            img: "/default-avatar.png",
+            img: "/teams/Rabin.jpeg",
             description: "Fullstack Developer passionate about crafting seamless experiences from frontend to backend, mastering the full spectrum of modern web development and mobile app development.",
             social: {
-                github: "https://github.com",
-                linkedin: "https://linkedin.com",
-                twitter: "https://twitter.com",
-                email: "mailto:rabin@pocketsoft.com"
+                github: "https://github.com/RabinPhaiju",
+                linkedin: "https://www.linkedin.com/in/rabinphaiju/",
+                email: "mailto:rabin@pocketsoft.net"
             }
         },
         {
             name: "Shesan Rijal",
             role: "Logic Builder",
-            img: "/default-avatar.png",
+            img: "/teams/Shesan.jpeg",
             description: "Logic Builder passionate about designing complex algorithms and system architectures, transforming business requirements into elegant code.",
             social: {
-                github: "https://github.com",
-                linkedin: "https://linkedin.com",
-                twitter: "https://twitter.com",
-                email: "mailto:shesan@pocketsoft.com"
+                github: "https://github.com/ioshesan",
+                linkedin: "https://www.linkedin.com/in/shesan-rijal-166318375/",
+                email: "mailto:shesan@pocketsoft.net"
             }
         },
         {
             name: "Saurav Luitel",
             role: "Frontend Developer",
-            img: "/default-avatar.png",
+            img: "/teams/Saurav.jpeg",
             description: "Frontend Developer passionate about creating visually stunning, pixel-perfect interfaces and turning design concepts into interactive experiences using modern frameworks.",
             social: {
-                github: "https://github.com",
-                linkedin: "https://linkedin.com",
-                twitter: "https://twitter.com",
-                email: "mailto:saurav@pocketsoft.com"
+                github: "https://github.com/Saurav-627",
+                linkedin: "https://www.linkedin.com/in/sauravluitel/",
+                email: "mailto:saurav@pocketsoft.net"
             }
         },
         {
@@ -140,30 +135,29 @@ const Team = () => {
             img: "/default-avatar.png",
             description: "Marketing Head at PocketSoft, shaping growth strategies through data-backed marketing decisions, global market outreach, strategic partnerships, and high-value project sourcing to strengthen international market presence and drive sustainable revenue growth.",
             social: {
-                github: "https://github.com",
-                linkedin: "https://linkedin.com",
-                twitter: "https://twitter.com",
-                email: "mailto:kavesh@pocketsoft.com"
+                // github: "https://github.com",
+                linkedin: "https://www.linkedin.com/in/kaveesh-dhungana-519093346/",
+                email: "mailto:kavesh@pocketsoft.net"
             }
         },
     ];
 
     return (
-        <section className="py-8 px-6 md:px-12 bg-soft-gray overflow-hidden border-y-4 border-deep-gray relative" id="team">
+        <section className="py-6 md:py-8 px-4 md:px-8 lg:px-12 bg-soft-gray overflow-hidden border-y-4 border-deep-gray relative" id="team">
             <div className="max-w-[1200px] mx-auto">
-                <div className="text-center mb-6 animate-on-scroll">
-                    <span className="tag-oversized mx-auto">Core Unit</span>
-                    <h2 className="text-3xl md:text-5xl font-black mt-4 uppercase">The Architects.</h2>
-                    <p className="mt-3 text-base max-w-2xl mx-auto font-medium">Meet the brilliant minds behind PocketSoft's innovation</p>
+                <div className="text-center mb-4 md:mb-6 animate-on-scroll">
+                    <span className="tag-oversized mx-auto text-xs md:text-sm">Core Unit</span>
+                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-black mt-3 md:mt-4 uppercase">The Architects.</h2>
+                    <p className="mt-2 md:mt-3 text-sm md:text-base max-w-2xl mx-auto font-medium">Meet the brilliant minds behind PocketSoft's innovation</p>
                 </div>
 
                 <Swiper
                     modules={[Autoplay, Pagination, Navigation]}
-                    autoplay={{
-                        delay: 3000,
-                        disableOnInteraction: false,
-                        pauseOnMouseEnter: true,
-                    }}
+                    // autoplay={{
+                    //     delay: 3000,
+                    //     disableOnInteraction: false,
+                    //     pauseOnMouseEnter: true,
+                    // }}
                     navigation={{
                         nextEl: '.team-next',
                         prevEl: '.team-prev',
@@ -196,24 +190,24 @@ const Team = () => {
                                     <img
                                         src={member.img}
                                         alt={member.name}
-                                        className="border-b-4 border-deep-gray w-full h-[300px]"
+                                        className="border-b-4 border-deep-gray w-full h-[250px] md:h-[300px] object-cover"
                                     />
                                 </div>
 
                                 {/* Content */}
-                                <div className="p-4">
-                                    <h4 className="text-xl font-black mb-1.5 uppercase tracking-tight">{member.name}</h4>
+                                <div className="p-3 md:p-4">
+                                    <h4 className="text-lg md:text-xl font-black mb-1 md:mb-1.5 uppercase tracking-tight">{member.name}</h4>
 
                                     {/* Role Badge */}
-                                    <div className="mb-3">
-                                        <span className="bg-industrial-gray text-black border-2 border-deep-gray inline-block px-2 py-1 text-sm font-bold uppercase tracking-widest">
+                                    <div className="mb-2 md:mb-3">
+                                        <span className="bg-industrial-gray text-black border-2 border-deep-gray inline-block px-2 py-1 text-xs md:text-sm font-bold uppercase tracking-widest">
                                             {member.role}
                                         </span>
                                     </div>
 
                                     {/* Description */}
-                                    <div className="mb-3">
-                                        <div className="text-md leading-relaxed text-gray-700 font-medium border-l-2 border-primary pl-2">
+                                    <div className="mb-2 md:mb-3">
+                                        <div className="text-sm md:text-md leading-relaxed text-gray-700 font-medium border-l-2 border-primary pl-2">
                                             <Description text={member.description} />
                                         </div>
                                     </div>
